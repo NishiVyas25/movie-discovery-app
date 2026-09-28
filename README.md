@@ -15,6 +15,19 @@ A full-stack movie discovery application built with React and Node.js. The appli
 * Loading, empty-state, and error feedback
 * Responsive layout for different screen sizes
 
+## Screenshots
+
+### Home / Movie Discovery
+![Home Page](screenshots/home1.png)
+![Home Page](screenshots/home2.png)
+
+### Movie Details
+![Movie Details](screenshots/details1.png)
+![Movie Details](screenshots/details2.png)
+
+### Wishlist
+![Wishlist](screenshots/wishlist.png)
+
 ## Tech Stack
 
 ### Frontend
