@@ -120,7 +120,7 @@ function Home() {
   }
 
   return (
-    <main>
+    <main className="home-page">
       <h1>Movie Discovery</h1>
 
       <div className="search-section">
@@ -199,6 +199,7 @@ function Home() {
 
           {hasMore && (
             <button
+              className="load-more-button"
               onClick={loadMoreMovies}
               disabled={loadingMore}
             >

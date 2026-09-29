@@ -20,6 +20,15 @@ main {
   padding: 30px 20px;
 }
 
+.home-page > h1 {
+  text-align: center;
+}
+
+.home-page > h2 {
+  text-align: center;
+  margin: 30px 0 24px;
+}
+
 .movie-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
@@ -299,6 +308,27 @@ main {
   color: #666;
 }
 
+.load-more-button {
+  display: block;
+  margin: 30px auto 10px;
+  padding: 11px 22px;
+  border: none;
+  border-radius: 6px;
+  background: #111;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.load-more-button:hover {
+  background: #333;
+}
+
+.load-more-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
 @media (max-width: 800px) {
   .wishlist-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -308,5 +338,47 @@ main {
 @media (max-width: 550px) {
   .wishlist-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 800px) {
+  .movie-details {
+    padding: 25px 16px;
+  }
+
+  .movie-details-container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .movie-details-poster {
+    display: flex;
+    justify-content: center;
+  }
+
+  .movie-details-poster img {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .movie-details-content {
+    width: 100%;
+    text-align: center;
+  }
+
+  .movie-details-content h1 {
+    font-size: 32px;
+  }
+
+  .movie-tagline {
+    font-size: 17px;
+  }
+
+  .movie-info p {
+    font-size: 15px;
+  }
+
+  .overview-section {
+    text-align: left;
   }
 }
