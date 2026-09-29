@@ -124,14 +124,17 @@ function Home() {
       <h1>Movie Discovery</h1>
 
       <div className="search-section">
-        <input
-          className="search-input"
-          type="text"
-          placeholder="Search for a movie..."
-          value={query}
-          onChange={(event) => setQuery(event.target.value)}
-        />
+        <div className="search-box">
+          <input
+            className="search-input"
+            type="text"
+            placeholder="Search for a movie..."
+            value={query}
+            onChange={(event) => setQuery(event.target.value)}
+          />
 
+        </div>
+        
         <div className="filter-controls">
           <select
             className="filter-select"
